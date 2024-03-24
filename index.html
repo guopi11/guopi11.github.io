@@ -90,7 +90,7 @@
             // collada
             //加载模型
             var loader = new THREE.ColladaLoader();
-            loader.load('stormtrooper/stormtrooper.dae', function (collada) {
+            loader.load('stormtrooper/obj_file.obj', function (collada) {
                 var animations = collada.animations;
                 var avatar = collada.scene;
                 avatar.traverse(function (node) {
