@@ -72,7 +72,7 @@
         var changX=0;
         var changY=0;var changZ=0;
         init();
-        animate();
+        // animate();
 
         function init() {
             container = document.getElementById('container');
@@ -90,7 +90,7 @@
             // collada
             //加载模型
             var loader = new THREE.ColladaLoader();
-            loader.load('stormtrooper/obj_file.obj', function (collada) {
+            loader.load('stormtrooper/stormtrooper.dae', function (collada) {
                 var animations = collada.animations;
                 var avatar = collada.scene;
                 avatar.traverse(function (node) {
